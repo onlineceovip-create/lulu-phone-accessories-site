@@ -1,0 +1,16 @@
+Render deploy checklist
+
+1. Push this project to a GitHub repository.
+2. In Render, create a new Web Service from that GitHub repo.
+3. Render should detect:
+   - Dockerfile
+   - render.yaml
+4. Set secure environment variables:
+   - ADMIN_USERNAME
+   - ADMIN_PASSWORD
+5. Confirm persistent disk mount path:
+   - /var/data/lulu
+6. Deploy and verify:
+   - /lulu
+   - /lulu/admin
+   - /api/health

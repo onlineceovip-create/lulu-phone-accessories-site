@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="admin-body">
+    <div class="admin-layout">
+      <section class="admin-panel intro-panel">
+        <span class="eyebrow" data-i18n="adminEyebrow">Admin</span>
+        <h1 data-i18n="adminTitle">Manage your storefront</h1>
+        <p>
+          <span data-i18n="adminIntro">Use this page to update products, price, stock, featured status and WhatsApp contact. Saving here updates the product data file used by the shop page.</span>
+        </p>
+
+        <div class="admin-help">
+          <p><strong data-i18n="defaultLogin">Default login</strong></p>
+          <p><span data-i18n="usernameLabel">Username</span>: <code>admin</code></p>
+          <p><span data-i18n="passwordLabel">Password</span>: <code>codex123</code></p>
+          <p class="small-note" data-i18n="adminHelpNote">You can change them with environment variables `ADMIN_USERNAME` and `ADMIN_PASSWORD` before starting the server.</p>
+        </div>
+
+        <div class="login-box">
+          <label>
+            <span data-i18n="usernameLabel">Username</span>
+            <input id="usernameInput" type="text" value="admin" />
+          </label>
+          <label>
+            <span data-i18n="passwordLabel">Password</span>
+            <input id="passwordInput" type="password" value="codex123" />
+          </label>
+          <label>
+            <span data-i18n="languageLabel">Language</span>
+            <select id="adminLanguageSwitcher">
+              <option value="en">English</option>
+              <option value="zh">中文</option>
+              <option value="sw">Kiswahili</option>
+            </select>
+          </label>
+        </div>
+
+        <a class="button secondary" href="/" data-i18n="backToStore">Back To Store</a>
+      </section>
+
+      <section class="admin-panel">
+        <div class="admin-toolbar">
+          <button id="loadButton" class="button secondary" type="button" data-i18n="loadProducts">Load Products</button>
+          <button id="addButton" class="button primary" type="button" data-i18n="addProduct">Add Product</button>
+          <button id="saveButton" class="button primary" type="button" data-i18n="saveChanges">Save Changes</button>
+        </div>
+
+        <p id="statusMessage" class="status-message"></p>
+        <div id="editorList" class="editor-list"></div>
+      </section>
+    </div>
+
+    <script src="/admin.js"></script>
+  </body>
+  </html>

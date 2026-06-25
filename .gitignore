@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.local
+*.log
+*.tmp
+dom-temp.html
+alignment-check*.png
+cleanup-check*.png
+filter-style-check*.png
+home-check*.png
+home-merge-check*.png
+pink-check.png
+simple-merge-check.png

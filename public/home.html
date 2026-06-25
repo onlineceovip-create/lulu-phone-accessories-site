@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lulu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell home-shell">
+      <header class="site-header home-header">
+        <div class="brand-center">
+          <a class="wordmark" href="/lulu" data-i18n="brandName">Lulu</a>
+          <nav class="header-nav">
+            <a href="/lulu" data-i18n="navHome">Home</a>
+            <a href="#categories" data-i18n="navCategories">Categories</a>
+          </nav>
+        </div>
+        <div class="header-side right-side">
+          <div class="language-switcher" aria-label="Language switcher">
+            <span class="language-icon" aria-hidden="true">L</span>
+            <select id="languageSwitcher">
+              <option value="en">English</option>
+              <option value="zh">中文</option>
+              <option value="sw">Kiswahili</option>
+            </select>
+          </div>
+        </div>
+      </header>
+
+      <main class="home-main">
+        <section class="home-hero">
+          <p class="home-kicker" data-i18n="homeKicker">Lulu curated phone case store</p>
+          <h1 class="home-title" data-i18n="homeTitle">Pick your style first, then enter the collection you like.</h1>
+        </section>
+
+        <section class="home-categories section" id="categories">
+          <div class="section-heading">
+            <p class="section-kicker" data-i18n="categoryKicker">Shop by style</p>
+            <h2 data-i18n="categoryTitle">Four collections, four moods.</h2>
+            <p class="section-note" data-i18n="categorySubtitle">
+              Tap any category to open its own page with a different intro and matching products.
+            </p>
+          </div>
+          <div id="categoryGrid" class="category-grid"></div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="/home.js"></script>
+  </body>
+</html>

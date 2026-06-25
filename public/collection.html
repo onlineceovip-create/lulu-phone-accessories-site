@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lulu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell collection-shell">
+      <header class="site-header">
+        <div class="brand-center">
+          <a class="wordmark" href="/lulu" data-i18n="brandName">Lulu</a>
+          <nav class="header-nav">
+            <a href="/lulu" data-i18n="navHome">Home</a>
+            <a href="/lulu#categories" data-i18n="navCategories">Categories</a>
+          </nav>
+        </div>
+        <div class="header-side right-side">
+          <div class="language-switcher" aria-label="Language switcher">
+            <span class="language-icon" aria-hidden="true">L</span>
+            <select id="languageSwitcher">
+              <option value="en">English</option>
+              <option value="zh">中文</option>
+              <option value="sw">Kiswahili</option>
+            </select>
+          </div>
+        </div>
+      </header>
+
+      <section class="collection-hero" id="collectionHero">
+        <div class="collection-copy">
+          <p class="collection-kicker" id="heroKicker"></p>
+          <h1 id="heroTitle"></h1>
+          <p class="collection-subtitle" id="heroSubtitle"></p>
+        </div>
+      </section>
+
+      <main class="collection-main">
+        <section class="collection-intro">
+          <p id="collectionIntro"></p>
+        </section>
+
+        <section class="section" id="catalog">
+          <div class="catalog-controls collection-controls">
+            <div class="control-group">
+              <label for="searchInput" data-i18n="searchLabel">Search</label>
+              <input
+                id="searchInput"
+                type="search"
+                placeholder="Search products..."
+                data-i18n-placeholder="searchPlaceholder"
+              />
+            </div>
+            <div class="control-group inline-group">
+              <label for="sortFilter" data-i18n="sortLabel">Sort by</label>
+              <select id="sortFilter">
+                <option value="featured" data-i18n="sortFeatured">Featured</option>
+                <option value="price-low" data-i18n="sortPriceLow">Price: Low to High</option>
+                <option value="price-high" data-i18n="sortPriceHigh">Price: High to Low</option>
+                <option value="newest" data-i18n="sortNewest">Newest</option>
+              </select>
+            </div>
+            <div class="product-count">
+              <span id="stat-count">0</span> <span data-i18n="productsCountLabel">products</span>
+            </div>
+          </div>
+
+          <div id="productGrid" class="product-grid collection-grid"></div>
+          <p id="emptyState" class="empty-state hidden" data-i18n="emptyState">
+            No products match this filter right now.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="/collection.js"></script>
+  </body>
+</html>
