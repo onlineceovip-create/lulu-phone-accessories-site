@@ -593,17 +593,7 @@ h3 {
 }
 
 .collection-main {
-  padding: 28px 0 0;
-}
-
-.collection-intro {
-  text-align: center;
-  padding: 14px 0 20px;
-}
-
-.collection-intro p {
-  font-size: 1.05rem;
-  color: var(--collection-muted);
+  padding: 18px 0 0;
 }
 
 .section {

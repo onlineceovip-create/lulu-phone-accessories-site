@@ -21,7 +21,6 @@ const hero = document.getElementById("collectionHero");
 const heroKicker = document.getElementById("heroKicker");
 const heroTitle = document.getElementById("heroTitle");
 const heroSubtitle = document.getElementById("heroSubtitle");
-const collectionIntro = document.getElementById("collectionIntro");
 
 let allProducts = [];
 
@@ -100,7 +99,6 @@ function applyStaticTranslations() {
   heroKicker.textContent = localizeText(collection.heroKicker, language);
   heroTitle.textContent = localizeText(collection.heroTitle, language);
   heroSubtitle.textContent = localizeText(collection.heroSubtitle, language);
-  collectionIntro.textContent = localizeText(collection.intro, language);
   hero.style.setProperty("--hero-image", `url("${coverImage}")`);
 }
 
