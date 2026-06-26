@@ -241,5 +241,5 @@ server.listen(PORT, HOST, () => {
   console.log(`Health check: http://127.0.0.1:${PORT}/api/health`);
   console.log(`Admin page: http://${HOST}:${PORT}/admin.html`);
   console.log(`Branded admin route: http://${HOST}:${PORT}/lulu/admin`);
-  console.log(`Admin login: ${ADMIN_USERNAME} / ${ADMIN_PASSWORD}`);
+  console.log(`Admin login is protected with custom production credentials.`);
 });
