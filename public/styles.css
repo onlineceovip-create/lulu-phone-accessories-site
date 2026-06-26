@@ -64,6 +64,12 @@ img {
   padding-bottom: 40px;
 }
 
+.home-topbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 24px 0 8px;
+}
+
 .home-body {
   color: #111111;
   background:
@@ -212,6 +218,12 @@ img {
   padding-top: 14px;
 }
 
+.home-main-simple {
+  min-height: calc(100vh - 96px);
+  align-content: center;
+  padding-top: 0;
+}
+
 .home-hero {
   display: grid;
   gap: 18px;
@@ -270,6 +282,7 @@ img {
 .home-categories {
   display: grid;
   gap: 24px;
+  justify-items: center;
 }
 
 .section-heading {
@@ -284,6 +297,7 @@ img {
   grid-template-columns: repeat(4, minmax(220px, 240px));
   justify-content: center;
   gap: 24px;
+  width: 100%;
 }
 
 .category-card {
@@ -842,6 +856,15 @@ code {
     justify-items: start;
     text-align: left;
     padding: 34px 4px 10px;
+  }
+
+  .home-topbar {
+    padding-top: 16px;
+  }
+
+  .home-main-simple {
+    min-height: auto;
+    padding-top: 8px;
   }
 
   .category-grid {
