@@ -106,6 +106,7 @@ export const COLLECTIONS = {
 const translations = {
   en: {
     brandName: "Lulu",
+    homeVision: "Simple cases, better daily style.",
     navHome: "Home",
     navCategories: "Categories",
     homeKicker: "Lulu curated phone case store",
@@ -128,6 +129,7 @@ const translations = {
   },
   zh: {
     brandName: "Lulu",
+    homeVision: "简单一点，也更耐看一点。",
     navHome: "首页",
     navCategories: "分类",
     homeKicker: "Lulu 手机壳小店",
@@ -150,6 +152,7 @@ const translations = {
   },
   sw: {
     brandName: "Lulu",
+    homeVision: "Rahisi zaidi, maridadi kila siku.",
     navHome: "Nyumbani",
     navCategories: "Makundi",
     homeKicker: "Duka la Lulu la kava za simu",
