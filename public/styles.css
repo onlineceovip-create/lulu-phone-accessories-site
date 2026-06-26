@@ -67,30 +67,51 @@ img {
 .home-topbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 16px;
   min-height: 56px;
   padding: 24px 0 8px;
 }
 
+.home-brand-hero {
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+  padding: 6px 0 12px;
+}
+
 .home-wordmark {
+  position: relative;
   font-family: "Space Grotesk", sans-serif;
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.06em;
   color: #111111;
 }
 
-.home-brand {
-  display: grid;
-  gap: 2px;
+.home-wordmark::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -16px;
+  width: 84px;
+  height: 14px;
+  transform: translateX(-50%);
+  border-bottom: 5px solid rgba(17, 17, 17, 0.18);
+  border-radius: 0 0 999px 999px;
+  filter: blur(0.15px);
 }
 
 .home-vision {
   margin: 0;
-  font-size: 0.9rem;
-  letter-spacing: 0.01em;
-  color: #666666;
+  max-width: 18ch;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.45rem, 2.6vw, 2.1rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  color: #3a3a3a;
 }
 
 .home-wordmark:hover {
@@ -253,6 +274,7 @@ img {
 .home-main-simple {
   min-height: calc(100vh - 96px);
   align-content: center;
+  gap: 28px;
   padding-top: 0;
 }
 
@@ -313,7 +335,7 @@ img {
 
 .home-categories {
   display: grid;
-  gap: 24px;
+  gap: 20px;
   justify-items: center;
 }
 
@@ -896,7 +918,18 @@ code {
 
   .home-main-simple {
     min-height: auto;
+    gap: 20px;
     padding-top: 8px;
+  }
+
+  .home-brand-hero {
+    justify-items: center;
+    padding-top: 4px;
+  }
+
+  .home-wordmark::after {
+    width: 64px;
+    bottom: -14px;
   }
 
   .category-grid {
