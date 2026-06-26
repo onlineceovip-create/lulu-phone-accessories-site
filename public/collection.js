@@ -18,8 +18,6 @@ const emptyState = document.getElementById("emptyState");
 const statCount = document.getElementById("stat-count");
 const languageSwitcher = document.getElementById("languageSwitcher");
 const hero = document.getElementById("collectionHero");
-const heroKicker = document.getElementById("heroKicker");
-const heroTitle = document.getElementById("heroTitle");
 const heroSubtitle = document.getElementById("heroSubtitle");
 
 let allProducts = [];
@@ -96,8 +94,6 @@ function applyStaticTranslations() {
     }
   });
 
-  heroKicker.textContent = localizeText(collection.heroKicker, language);
-  heroTitle.textContent = localizeText(collection.heroTitle, language);
   heroSubtitle.textContent = localizeText(collection.heroSubtitle, language);
   hero.style.setProperty("--hero-image", `url("${coverImage}")`);
 }

@@ -531,12 +531,13 @@ img {
 
 .collection-copy {
   width: min(620px, 100%);
-  padding: 28px 32px;
+  padding: 26px 32px;
   border-radius: 34px;
   background: var(--collection-card-bg);
   backdrop-filter: blur(8px);
   border: 1px solid var(--collection-card-border);
   box-shadow: var(--collection-card-shadow);
+  text-align: center;
 }
 
 .collection-kicker,
@@ -585,10 +586,12 @@ h3 {
 }
 
 .collection-subtitle {
-  margin: 14px auto 0;
+  margin: 0 auto;
   max-width: 34ch;
-  font-size: 0.98rem;
-  line-height: 1.7;
+  font-size: 1.18rem;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
   color: var(--collection-muted);
 }
 
