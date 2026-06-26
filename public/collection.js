@@ -80,6 +80,7 @@ function applyStaticTranslations() {
   document.documentElement.lang = language;
   document.title = `Lulu | ${getCollectionLabel(slug, language)}`;
   languageSwitcher.value = language;
+  document.body.dataset.collectionTheme = slug;
 
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     node.textContent = t(node.dataset.i18n, language);
