@@ -69,15 +69,15 @@ img {
   align-items: center;
   justify-content: flex-end;
   gap: 16px;
-  min-height: 56px;
-  padding: 24px 0 8px;
+  min-height: 40px;
+  padding: 8px 0 0;
 }
 
 .home-brand-hero {
   display: grid;
   justify-items: center;
   gap: 18px;
-  padding: 6px 0 12px;
+  padding: 0 0 12px;
 }
 
 .home-wordmark {
@@ -275,7 +275,7 @@ img {
   min-height: calc(100vh - 96px);
   align-content: center;
   gap: 28px;
-  padding-top: 0;
+  padding-top: 8px;
 }
 
 .home-hero {
@@ -913,7 +913,7 @@ code {
   }
 
   .home-topbar {
-    padding-top: 16px;
+    padding-top: 6px;
   }
 
   .home-main-simple {
